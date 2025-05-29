@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo - Matriz 2</title>
+</head>
+
+<body style="text-align: center;">
+    <h1 >Exemplo - Matriz 2</h1>
+    <h1 > Exercício 01 - manipulando arrays</h1>
+    <button onclick="array()">Exercício</button>
+
+    <script>
+
+        array =()=>{
+            let dados = []
+    
+            for (let i = 0; i < 3; i++) {
+                dados[i] = []
+                for (let j = 0; j < 3; j++) {
+                    dados[i][j] = prompt(`Digite o valor na posição: [${i}][${j}]`)
+                }
+            }
+            // ------------------printar na tela-------------------
+            for (let i = 0; i < 3; i++) {
+                for (let j = 0; j < 3; j++) {
+                    document.writeln(`Na posição [${i}] [${j}]: ${dados[i][j]}<br>`)
+                }
+            }
+        }
+
+    </script>
+</body>
+
+
+</html>
