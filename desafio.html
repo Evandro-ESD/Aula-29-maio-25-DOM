@@ -1,0 +1,50 @@
+// Atenção:
+
+// Criar uma lista de matriz 4 x 4 ao qual o usuario digitará os valores
+// listar os valores no navegador.
+// Obs: crie dois laços paara inserir e dois para exibir em TextTrackList.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!!Desafio!!</title>
+</head>
+
+<body>
+    <h1>desafio</h1>
+    <button onclick="desfio()">Desafio</button>
+
+    <div id="exibir"></div>
+
+
+    <script>
+
+        desfio = () => {
+            let lista = []
+
+            for (let i = 0; i < 2; i++) {
+                lista[i] = []
+                for (let j = 0; j < 2; j++) {
+                    lista[i][j] = prompt(`Valor na linha: ${i}| coluna: ${j}`)
+                }
+            }
+            // alert(`${lista}`)
+
+            let naTela = document.getElementById('exibir')
+
+            for(let i = 0; i < lista.length;i++){
+                for(let j = 0; j < lista[i].length; j++){
+                    naTela.innerText = lista
+                }
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
